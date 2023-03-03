@@ -1,0 +1,9 @@
+.teamBannerProp {
+  height: 300px;
+  width: 100vw;
+}
+
+.matchCardUlList {
+  display: flex;
+  flex-wrap: wrap;
+}
