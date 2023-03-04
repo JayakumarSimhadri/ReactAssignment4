@@ -63,13 +63,9 @@ class TeamMatches extends Component {
     return (
       <div>
         {isLoading ? (
-          <Loader
-            testid="loader"
-            type="TailSpin"
-            color="#00BFFF"
-            height={50}
-            width={50}
-          />
+          <div testid="loader">
+            <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
+          </div>
         ) : (
           <div>
             <img

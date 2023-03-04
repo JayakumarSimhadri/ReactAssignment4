@@ -39,13 +39,9 @@ class Home extends Component {
           />
           <h1>IPL Dashboard</h1>
           {isLoading ? (
-            <Loader
-              data-testid="loader"
-              type="TailSpin"
-              color="#00BFFF"
-              height={50}
-              width={50}
-            />
+            <div testid="loader">
+              <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
+            </div>
           ) : (
             <ul className="TeamsList">
               {blogsData.map(eachTeam => (
